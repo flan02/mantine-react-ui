@@ -1,0 +1,45 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply box-border p-0 m-0;
+    }
+
+
+    h1,
+    h2 {
+        @apply text-blue-950;
+    }
+    section {
+        @apply sm:px-6 lg:px-10;
+    }
+}
+
+@layer components {
+  .navLink {
+    @apply relative cursor-pointer h-full flex items-center hover:border-b-4 hover:border-emerald-500 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-gradient-to-r hover:before:h-1 before:transition-all before:duration-200;
+}
+.gradientButton {
+    @apply px-4 py-2 font-bold text-white rounded-full bg-gradient-to-br from-green-300 to-cyan-500;
+}
+    .opacityHover {
+        @apply transition-opacity duration-300 hover:opacity-80;
+        
+    }
+    .backgroundImage {
+        @apply bg-gray-200 md:bg-green-400 bg-no-repeat bg-cover md:bg-[length:700px] lg:bg-[length:880px] bg-[center_top_-15rem] sm:bg-[center_top_-17rem] min-[700px]:bg-[center_top_-19rem] min-[730px]:bg-[center_top_-21rem] md:bg-[right_-12rem_top] lg:bg-[right_-12rem_top_-9rem];
+        background-image: url(./assets/images/bg-intro-desktop.svg);
+    }
+    .gradientText:hover {
+        @apply text-transparent transition-colors bg-green-300 bg-cover cursor-pointer bg-gradient-to-r bg-clip-text;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .backgroundImage {
+        background-image: url(./assets/images/bg-intro-mobile.svg);
+    }
+  }
