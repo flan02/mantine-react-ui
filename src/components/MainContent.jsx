@@ -25,7 +25,7 @@ const MainContent = () => {
   const articleContent = articles.map((articleItem, index) => (
     <Card
       withBorder
-      className="border border-gray-200 max-w-[325px] xl:max-w-[280px] h-[28rem] text-slate-400 mx-auto text-center my-10 xl:mx-0 xl:text-left rounded-xl"
+      className="border border-gray-200 max-w-[325px] xl:max-w-[280px] h-[29rem] text-slate-400 mx-auto text-center my-10 xl:mx-0 xl:text-left rounded-xl"
       key={index}
     >
       <Card.Section>
@@ -33,7 +33,7 @@ const MainContent = () => {
           src={articleItem.img}
           alt={articleItem.title}
           fit="cover"
-          height={200}
+          className="h-[200px] w-full object-cover"
         />
       </Card.Section>
 
@@ -43,7 +43,9 @@ const MainContent = () => {
         </Text>
 
         <Text className="py-3 text-xl font-medium">
-          <h2 className="gradientText">{articleItem.title}</h2>
+          <h2 className="text-slate-800 hover:text-emerald-500">
+            {articleItem.title}
+          </h2>
         </Text>
 
         <Text className="text-grayBlue">
@@ -72,8 +74,8 @@ const MainContent = () => {
           </h1>
           <p className="text-slate-400 my-10 md:max-w-[390px] lg:max-w-none px-2 md:px-0">
             Take your financial life online. Your Easybank account will be a
-            one-stop-shop for spending, saving, budgeting, investing, and much
-            more.
+            one-stop-shop for spending, saving, budgeting, investing, crypto,
+            nft and much more.
           </p>
           <Button className="gradientButton opacityHover">
             Request Invite
@@ -87,7 +89,7 @@ const MainContent = () => {
           </h2>
           <p className="mb-10 max-w-[600px] mx-auto xl:mx-0 text-blue-950 lg:text-left lg:mx-0">
             We leverage Open Banking to turn your bank account into your
-            financial hub. Control your finances like never before
+            financial hub. Control your finances like never before. Be crypto.
           </p>
         </article>
         <Group

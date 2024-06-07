@@ -30,11 +30,15 @@ const Header = () => {
         <img src={companyLogo} alt="company logo" />
         <Group className="hidden h-full sm:block">
           <ul className="flex items-center justify-center h-full font-medium gap-x-3 md:gap-x-5 lg:gap-x-10 text-blue-950">
-            <li className="navLink">Home</li>
-            <li className="navLink">About</li>
+            <li className="navLink">
+              <a href="/">Home</a>
+            </li>
+            <li className="navLink">
+              <a href="/about">About</a>
+            </li>
+            <li className="navLink">NFT</li>
+            <li className="navLink">Crypto</li>
             <li className="navLink">Contact</li>
-            <li className="navLink">Blog</li>
-            <li className="navLink">Careers</li>
           </ul>
         </Group>
 
@@ -59,36 +63,37 @@ const Header = () => {
               shadow="xl"
               style={styles}
             >
-              <ul className="flex flex-col items-center justify-center text-4xl font-medium gap-y-12 text-blue-950 ">
+              <ul className="flex flex-col items-center justify-center text-4xl font-medium bg-emerald-50 gap-y-12 text-blue-950 ">
                 <li
-                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500"
+                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500 hover:underline"
                   onClick={close}
                 >
                   Home
                 </li>
                 <li
-                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500"
+                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500 hover:underline"
                   onClick={close}
                 >
                   About
                 </li>
+
                 <li
-                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500"
+                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500 hover:underline"
+                  onClick={close}
+                >
+                  NFT
+                </li>
+                <li
+                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500 hover:underline"
+                  onClick={close}
+                >
+                  Crypto
+                </li>
+                <li
+                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500 hover:underline"
                   onClick={close}
                 >
                   Contact
-                </li>
-                <li
-                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500"
-                  onClick={close}
-                >
-                  Blog
-                </li>
-                <li
-                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500"
-                  onClick={close}
-                >
-                  Careers
                 </li>
               </ul>
             </Paper>

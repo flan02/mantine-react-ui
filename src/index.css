@@ -2,7 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* Chrome styling for scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho del scroll */
+  }
+  
+  /* bar styling */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(21, 131, 122);
+    border-radius: 5px; /* Borde redondeado */
+  }
+  
+  /* track bar styling */
+  ::-webkit-scrollbar-track {
+    background-color: rgb(179, 235, 230); 
+  }
 @layer base {
     * {
         @apply box-border p-0 m-0;
