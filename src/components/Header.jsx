@@ -25,7 +25,7 @@ const Header = () => {
   });
 
   return (
-    <header className="sticky top-0 z-50 h-20 bg-white" ref={clickOutsideRef}>
+    <header className="sticky top-0 z-50 h-16 bg-white" ref={clickOutsideRef}>
       <Container className="flex items-center justify-between w-full h-full px-10 m-0 max-w-none">
         <img src={companyLogo} alt="company logo" />
         <Group className="hidden h-full sm:block">
@@ -36,9 +36,15 @@ const Header = () => {
             <li className="navLink">
               <a href="/about">About</a>
             </li>
-            <li className="navLink">NFT</li>
-            <li className="navLink">Crypto</li>
-            <li className="navLink">Contact</li>
+            <li className="navLink">
+              <a href="/nft">NFT</a>
+            </li>
+            <li className="navLink">
+              <a href="/crypto">Crypto</a>
+            </li>
+            <li className="navLink">
+              <a href="/contact">Contact</a>
+            </li>
           </ul>
         </Group>
 
@@ -59,22 +65,19 @@ const Header = () => {
           {(styles) => (
             <Paper
               withBorder
-              className="bg-white absolute top-[5.5rem] left-0 right-0 z-0 w-[95%] mx-auto py-5 rounded overflow-hidden sm:hidden"
+              className="absolute top-[5.5rem] left-0 right-0 z-0 w-[95%] mx-auto py-5 rounded overflow-hidden sm:hidden"
               shadow="xl"
               style={styles}
             >
-              <ul className="flex flex-col items-center justify-center text-4xl font-medium bg-emerald-50 gap-y-12 text-blue-950 ">
-                <li
-                  className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500 hover:underline"
-                  onClick={close}
-                >
-                  Home
+              <ul className="flex flex-col items-center justify-center py-16 text-4xl font-medium bg-emerald-50 gap-y-12 text-blue-950 ">
+                <li className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500 hover:underline">
+                  <a href="/">Home</a>
                 </li>
                 <li
                   className="flex items-center justify-center w-full h-10 cursor-pointer hover:text-emerald-500 hover:underline"
                   onClick={close}
                 >
-                  About
+                  <a href="/about ">About</a>
                 </li>
 
                 <li

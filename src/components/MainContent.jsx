@@ -59,7 +59,7 @@ const MainContent = () => {
     <main className=" bg-slate-200">
       <section
         id="landing_section"
-        className="bg-slate-100 flex flex-col md:flex-row-reverse justify-between items-center md:max-h-[500px] pb-20 backgroundImage"
+        className="mt-4 bg-slate-100 flex flex-col md:flex-row-reverse justify-between items-center md:max-h-[500px] pb-20 backgroundImage"
       >
         <figure className="w-[65%] mt-36 lg:mt-0 xl:w-[90%] max-w-[400px] md:max-w-[450px] lg:max-w-[500px] h-[360px] md:h-auto mx-auto sm:mx-0 lg:h-[400px]">
           <img
